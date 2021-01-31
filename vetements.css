@@ -1,0 +1,173 @@
+ * {
+         box-sizing:border-box;
+ }
+
+ body, html {
+        color: #526066;
+        height:100%;
+        margin:10px;
+        font-family:arial;
+    }
+
+p {
+        color:black; 
+        font-family: 'Helvetica Neue', sans-serif; 
+        font-size: 26px; 
+        font-weight: bold; 
+        letter-spacing: -1px; 
+        line-height: 1.6em;; 
+        text-align: center;
+}
+
+.l-content {
+        margin: 0 auto;
+}
+    
+.l-box {
+        padding: 0.5em 2em;
+}
+
+/*
+* -- MENU STYLES --
+* Make the menu have a very faint box-shadow.
+*/
+.pure-menu {
+        box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+    
+#logo {
+        color: dimgray
+}
+    
+.pure-menu-link {
+        padding: .5em .7em;
+}
+    
+    
+/*
+* -- BANNER --
+* The top banner with the headings. By using a combination
+* of `display: table;` and `display: table-cell;`, we can
+* vertically center the text.
+*/
+    
+.banner {
+        background: transparent url('vetement-background.png') 0 0 no-repeat fixed;
+        text-align: center;
+        background-size: cover;
+        
+    
+        height: 200px;
+        width: 100%;
+        margin-bottom: 3em;
+        display: table;
+}
+    
+.banner-head {
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-size: 150%;
+        color: white;
+        font-weight: 200px;
+        text-shadow: 0 1px 1px black;
+}
+    
+.name {
+        font-size: 150%;
+        font-family: 'cursive, impact';
+}
+
+.row {
+        display: -ms-flexbox;
+        display:flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding:0 4px;
+
+}
+
+
+
+@media screen and (max-width:800px) {
+        .column {
+                -ms-flex:100%;
+                flex:100%;
+                max-width:100%;
+        }
+}
+
+@media screen and (max-width:600px) {
+        .column {
+                -ms-flex:100%;
+                flex: 100%;
+                max-width:100%;
+        }
+}
+
+
+
+.column {
+        float:left;
+        width:50%;
+        padding:60px;
+        -ms-flex:25%;
+}
+
+
+
+.row::after {
+        content:"";
+        clear:both;
+        display:table;
+}
+
+img {
+        border:1px solid #ddd;
+        border-radius: 10px;
+        padding: 5px;
+        min-width: 100%;
+        min-height: 100%;
+        width:100%;
+        height:auto;
+        vertical-align: middle;
+}
+
+input.answer { 
+        outline: 0; 
+        border: 0; 
+        padding: 0; 
+        margin: 0; 
+        border-bottom: 1px solid #DED9D9;
+        text-align:center;
+}
+
+input.answer:focus {
+        border-color:none;
+        box-shadow:none;
+        transition:none;
+        text-align: center;
+}
+
+.hiddens {
+        visibility: hidden !important;
+        position: absolute !important;
+}
+
+.color-red{
+        color: #F00;
+    }
+
+.check-button {
+        height: 200px;
+  position: relative;
+}
+
+button {
+        margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+    <title>Les Vêtements</title>
+    <link rel="stylesheet" href="vetements.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.1/build/pure-min.css" integrity="sha384-QkSsJi6SGgWv5LAx1TdvIDRf8TW5Ui4NVKqDDlK1wY2eKioo7wvYIJvGWFQSFE4U" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading" id="logo">Un Café</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link"></a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"></a></li>
+        </ul>
+    </div>
+
+    
+
+    
+
+    <div class="row">
+        <div class="column">
+            <img src="vetement-background.png">
+        </div>
+        <div class="column">
+            <br>
+            <br>
+            <br>
+            <p>Complétez les phrases par 'un', 'une', 'des'.</p>
+            <br>
+            <br>
+            <br>
+            <form name="VetementForm" method="post">
+            
+            <div id="question1">1. La jeune fille porte un T-shirt et 
+                <input type="text" name="answer1" class="answer" id="answer1" maxlength="6" size="6" /> 
+                jupe large.
+            </div>
+            <br>
+            <div id="question2">2. Aujourd'hui, je porte 
+                <input type="text" name="answer2" class="answer" id="answer2" maxlength="6" size="6" /> 
+                pantalon vert.
+            </div>
+            <br>
+            <div id="question3">3. Les femmes et les hommes portent 
+                <input type="text" name="answer3" class="answer" id="answer3" maxlength="6" size="6" /> 
+                vestes avec leurs pantalons.
+            </div>
+            <br>
+            <div id="question4">4. Si elle a besoin d' 
+                <input type="text" name="answer4" class="answer" id="answer4" maxlength="6" size="6" /> 
+                costume, je vais le lui donner.
+            </div>
+            <br>
+            <div id="question5">5. Je vais lui chercher 
+                <input type="text" name="answer5" class="answer" id="answer5" maxlength="6" size="6" /> 
+                manteau.
+            </div>
+            <br>
+            <div id="question6">6. Il porte toujours 
+                <input type="text" name="answer6" class="answer" id="answer6" maxlength="6" size="6" /> 
+                chemise avec une cravate.
+            </div>
+            <br>
+            <div id="question7">7. Nous allons créer 
+                <input type="text" name="answer7" class="answer" id="answer7" maxlength="6" size="6" /> 
+                robe ensemble.
+            </div>
+            <br>
+            <div id="question8">8. Elle tricote 
+                <input type="text" name="answer8" class="answer" id="answer8" maxlength="6" size="6" /> 
+                pull marin à sa petite fille.
+            </div>
+            <br>
+            <div id="question9">9. Je mets  
+                <input type="text" name="answer9" class="answer" id="answer9" maxlength="6" size="6" /> 
+                chaussures de marche quand je vais me promener en forêt.
+            </div>
+            <br>
+            <div id="question10">10. Les hommes portaient  
+                <input type="text" name="answer10" class="answer" id="answer10" maxlength="6" size="6" /> 
+                chaussettes et des mitaines en laine.
+            </div>
+            <div class="check-button">
+            <button type="button" onclick="Vetement_Test()">Vérifiez Vos Réponses</button>
+            </div>
+            </form>
+            
+            
+        </div>
+    </div>
+
+    
+    <a style="display:block;margin:50px auto;max-width:240px" class="pure-button" href="index.html">
+        Activité suivante <i class="single_quot">›</i></a>
+
+    
+
+
+<script src="vetements.js"></script>
+
+</body>
+</html>
